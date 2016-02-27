@@ -1,0 +1,21 @@
+<template name="header">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{pathFor 'home'}}">PoliTalk<p style="display:inline; font-size:10px"></p></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav">
+                <li class="{{activeRouteClass}}">
+                    <a href="{{pathFor 'profile'}}">Profile</a>
+                </li>
+                <li class="{{activeRouteClass}}">
+                    <a href="{{pathFor 'createEvent'}}">Create Event</a>
+                </li>
+                <li class="{{activeRouteClass}}">
+                    <a href="{{pathFor 'aboutUs'}}">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</template>
