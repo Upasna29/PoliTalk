@@ -1,0 +1,5 @@
+Events.find()
+Events.findOne({'host':'Jan Schakowsky'}).location;
+Events.insert(<JSON object>)
+Events.update()
+Events.remove()
