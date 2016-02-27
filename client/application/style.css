@@ -22,6 +22,11 @@ nav .brand-logo {
    padding: 0 15px;
 }
 
+form p {
+   float: left;
+   margin: 0 10px 0 0;
+}
+
 .profileForm {
-  
+
 }
