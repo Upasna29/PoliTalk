@@ -21,3 +21,5 @@ insecure                # Allow all DB writes from clients (for prototyping)
 iron:router
 materialize:materialize
 planettraining:material-design-icons
+accounts-ui
+accounts-password

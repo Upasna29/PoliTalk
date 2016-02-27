@@ -6,16 +6,16 @@
    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
    <ul class="right hide-on-med-and-down">
      <li><a href="">About Us</a></li>
-     <li><a href="">Sign Up</a></li>
-     <li><a href="{{pathFor 'newsFeed'}}">Log In</a></li>
+     <li>
+         {{> loginButtons align="right"}}
+     </li>
    </ul>
    <ul class="side-nav" id="mobile-demo">
      <li>
        <i class="material-icons md-dark">face</i>
      </li>
      <li><a href="">About Us</a></li>
-     <li><a href="">Sign Up</a></li>
-     <li><a href="">Log In</a></li>
+     <li>{{> loginButtons}}</li>
    </ul>
  </div>
 </nav>
