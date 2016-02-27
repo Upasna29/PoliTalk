@@ -27,6 +27,12 @@ form p {
    margin: 0 10px 0 0;
 }
 
+#login-buttons a {
+   text-decoration: none;
+   cursor: pointer;
+   transition: background-color 2s;
+}
+
 .profileForm {
 
 }
