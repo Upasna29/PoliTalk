@@ -33,6 +33,16 @@ form p {
    transition: background-color 2s;
 }
 
-.profileForm {
-
+.select-wrapper input.select-dropdown {
+   font-size: 14px;
 }
+
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+
+ main {
+   flex: 1 0 auto;
+ }
