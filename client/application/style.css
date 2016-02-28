@@ -41,7 +41,6 @@ nav .brand-logo {
   left: -100px;
 }
 
-
 form p {
    float: left;
    margin: 0 10px 0 0;
@@ -53,14 +52,17 @@ form p {
    transition: background-color 2s;
 }
 
-.profileForm {
-
+.select-wrapper input.select-dropdown {
+   font-size: 14px;
 }
 
-footer.page-footer {
-  position: fixed;
-  z-index: 500;
-  width: 100%;
-  bottom: 0;
-  background-color: #ee6e73;
-}
+
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+
+ main {
+   flex: 1 0 auto;
+ }

@@ -1,3 +1,10 @@
+Template.editProfile.onRendered (
+   function() {
+      $(document).ready(function() {
+      $('select').material_select();
+   });
+});
+
 Template.editProfile.events({
     'submit #profile': function(e){
         e.preventDefault();
@@ -8,9 +15,6 @@ Template.editProfile.events({
             'phone':     $('#icon_telephone').val(),
             'gender':    $("input:radio[name='gender']:checked").val(),
             'notify':    $(e.target).find('[name=receiveNotifications]').val(),
-        }
-
+         };
         console.log(myprofile);
-
-    }
-});
+    }});
