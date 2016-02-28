@@ -22,6 +22,36 @@ nav .brand-logo {
    padding: 0 15px;
 }
 
+.posts {
+  background-color: grey;
+}
+
+.card .card-image img {
+  display: block;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 15%;
+}
+
+.card .card-heading {
+  position: relative;
+  top: -85px;
+  left: 75px;
+  border-radius: 0 0 2px 2px;
+}
+
+.card .card-content {
+  position: relative;
+  top: -85px;
+  left: 0px;
+  border-radius: 0 0 2px 2px;
+}
+
+
 form p {
    float: left;
    margin: 0 10px 0 0;
@@ -35,4 +65,11 @@ form p {
 
 .profileForm {
 
+}
+
+footer.page-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #ee6e73;
 }
