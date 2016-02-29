@@ -1,0 +1,11 @@
+<template name="home">
+	{{#if notFirstTime}}
+		{{> newsFeed}}
+	{{/if}}
+	{{#if firstTime}}
+		{{> firstLogin}}
+	{{/if}}
+	{{#if notLoggedIn}}
+		{{> noUser}}
+	{{/if}}
+</template>
