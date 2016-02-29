@@ -13,8 +13,8 @@ Template.editProfile.events({
             'firstname': $('#first_name').val(),
             'lastname':  $('#last_name').val(),
             'phone':     $('#icon_telephone').val(),
-            'gender':    $("input:radio[name='gender']:checked").val(),
-            'notify':    $(e.target).find('[name=receiveNotifications]').val(),
+            'gender':    $("input[type='radio'][name='gender']:checked").val(),
+            'notify':    $("input[type='radio'][name='receiveNotifications']:checked").val(),
          };
         console.log(myprofile);
     }});

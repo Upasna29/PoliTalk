@@ -24,30 +24,30 @@
           <div class="input-field col s6">
             <h6>Gender</h6>
             <p>
-              <input class="with-gap" name="gender" type="radio" id="male" />
+              <input class="with-gap" name="gender" type="radio" id="male" value="male"/>
               <label for="male">Male</label>
             </p>
             <p>
-              <input class="with-gap" name="gender" type="radio" id="female" />
+              <input class="with-gap" name="gender" type="radio" id="female" value="female"/>
               <label for="female">Female</label>
             </p>
             <p>
-              <input class="with-gap" name="gender" type="radio" id="Other"  />
+              <input class="with-gap" name="gender" type="radio" id="Other" value="other" />
               <label for="Other">Other</label>
             </p>
             <p>
-              <input class="with-gap" name="gender" type="radio" id="preferNotToAnswer"  />
+              <input class="with-gap" name="gender" type="radio" id="preferNotToAnswer" value='preferNot' />
               <label for="preferNotToAnswer">Prefer not to answer</label>
             </p>
           </div>
           <div class="input-field col s6">
             <h6>Would you like to receive notifications about nearby events?</h6>
             <p>
-              <input class="with-gap" name="receiveNotifications" type="radio" id="yes" />
+              <input class="with-gap" name="receiveNotifications" type="radio" id="yes" value="yes"/>
               <label for="yes">Yes</label>
             </p>
             <p>
-              <input class="with-gap" name="receiveNotifications" type="radio" id="no" />
+              <input class="with-gap" name="receiveNotifications" type="radio" id="no" value="no"/>
               <label for="no">No</label>
             </p>
           </div>
@@ -76,10 +76,10 @@
             </select>
           </div>
         </div>
+        <div style="text-align: center">
+          <input type="submit" name="submit" class="waves-effect waves-light btn" value="Save">
+        </div>
       </form>
-      <div style="text-align: center">
-        <a class="waves-effect waves-light btn">Save</a>
-      </div>
     </div>
   </div>
 </template>
