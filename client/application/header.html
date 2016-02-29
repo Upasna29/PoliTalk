@@ -1,24 +1,22 @@
-<template name="header">
-
-  <nav>
- <div class="nav-wrapper">
-   <a href="{{pathFor 'home'}}" class="brand-logo">PoliTalk</a>
-   <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-   <ul class="right hide-on-med-and-down">
-     <li><a href="">About Us</a></li>
-     <li>
-         {{> loginButtons align="right"}}
-         <!-- I think this will break because we include the template twice, wasn't working from sidebar. -->
-     </li>
-   </ul>
-   <ul class="side-nav" id="mobile-demo">
-     <li>
-       <i class="material-icons md-dark">face</i>
-     </li>
-     <li><a href="">About Us</a></li>
-     <li>{{> loginButtons}}</li>
-   </ul>
- </div>
-</nav>
-
+<template name="header">    
+    <nav>
+        <div class="nav-wrapper">
+            <a href="{{pathFor 'home'}}" class="brand-logo">PoliTalk</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="">About Us</a></li>
+                <li>
+                    {{> loginButtons align="right"}}
+                    <!-- I think this will break because we include the template twice, wasn't working from sidebar. -->
+                </li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li>
+                    <i class="material-icons md-dark">face</i>
+                </li>
+                <li>{{> loginButtons}}</li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
 </template>
