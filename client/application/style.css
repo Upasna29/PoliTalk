@@ -94,3 +94,17 @@ body {
 .sharingIcon {
    padding: 0 5px;
 }
+
+.findEventsButton {
+  text-align: center;
+  padding: 10px !important;
+}
+
+.findEventsText {
+  text-align: center;
+  padding: 10px !important;
+}
+
+.findEventCard {
+  padding: 10px 0 0 0;
+}
