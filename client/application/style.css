@@ -1,3 +1,8 @@
+bolded {
+  font-weight: bold;
+  font-size: 15px; 
+}
+
 nav .brand-logo {
    padding: 0 10px;
 }
@@ -24,6 +29,14 @@ nav .brand-logo {
 
 .container {
   display: inline-block;
+}
+
+.search-bar{
+  padding-left: 200px;
+}
+
+.margin-fixer{
+  padding-left: 30px;
 }
 
 .card .card-image img {
