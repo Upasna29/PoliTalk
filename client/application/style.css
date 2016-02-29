@@ -1,3 +1,8 @@
+bolded {
+  font-weight: bold;
+  font-size: 15px;
+}
+
 nav .brand-logo {
    padding: 0 10px;
 }
@@ -20,6 +25,14 @@ nav .brand-logo {
    float: right;
    text-align: right;
    padding: 0 15px;
+}
+
+.search-bar{
+  padding-left: 200px;
+}
+
+.margin-fixer{
+  padding-left: 30px;
 }
 
 form p {
