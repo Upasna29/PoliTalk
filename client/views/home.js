@@ -1,5 +1,10 @@
 Template.home.helpers({
-    notLoggedIn: function(){return !Meteor.user()},
-    firstTime: function(){return (Meteor.user() && ("firstame" in Meteor.user().profile))},
-    notFirstTime: function(){return (Meteor.user() && !("firstame" in Meteor.user().profile))},
+    firstTime: function(){
+        if (Meteor.user() && ('profile' in Meteor.user())){
+            return ("firstame" in Meteor.user().profile)
+        }
+        else{
+            return true;
+        }
+    },
 });
