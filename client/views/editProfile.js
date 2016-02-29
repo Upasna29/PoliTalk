@@ -39,5 +39,5 @@ Template.editProfile.events({
         Users.update({_id:Meteor.userId()}, {$set:{
             'profile': myprofile,
         }});
-        Router.go('newsFeed');
+        Router.go('home');
     }});
