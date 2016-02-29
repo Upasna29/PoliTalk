@@ -22,25 +22,6 @@ nav .brand-logo {
    padding: 0 15px;
 }
 
-.container {
-  display: inline-block;
-}
-
-.card .card-image img {
-  position: relative;
-  border-radius: 2px 2px 0 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-}
-
-.card .card-content {
-  position: relative;
-  left: -100px;
-}
-
 form p {
    float: left;
    margin: 0 10px 0 0;
@@ -66,3 +47,37 @@ body {
  main {
    flex: 1 0 auto;
  }
+
+ .card .card-image {
+   width: 220px;
+   height: 301px;
+   float: left;
+   padding: 5px;
+ }
+
+ .card .card-image img {
+   height: 100%;
+ }
+
+ .card.customCardContent {
+   height: 301px;
+   background-color: #ebebeb;
+ }
+
+ .card-title {
+    padding: 30px;
+}
+
+.cardText {
+   padding: 0 10px 0 230px;
+}
+
+.sharing {
+   position: relative;
+   top: 50px;
+   text-align: center;
+}
+
+.sharingIcon {
+   padding: 0 5px;
+}
