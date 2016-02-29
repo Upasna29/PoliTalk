@@ -22,6 +22,10 @@ nav .brand-logo {
    padding: 0 15px;
 }
 
+.container {
+  display: inline-block;
+}
+
 .card .card-image img {
   position: relative;
   border-radius: 2px 2px 0 0;
@@ -30,6 +34,11 @@ nav .brand-logo {
   top: 0;
   bottom: 0;
   width: 50%;
+}
+
+.card .card-content {
+  position: relative;
+  left: -100px;
 }
 
 form p {
@@ -46,6 +55,7 @@ form p {
 .select-wrapper input.select-dropdown {
    font-size: 14px;
 }
+
 
 body {
    display: flex;
