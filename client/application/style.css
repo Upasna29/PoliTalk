@@ -65,19 +65,23 @@ bolded {
 nav .brand-logo {
    padding: 0 10px;
 }
+
 .material-icons.md-dark {
    text-align: center;
 
    color: black;
 }
+
 .footerLinksDiv {
    float: left;
 
    padding: 0 10px;
 }
+
 .footerLink {
    padding: 0 5px;
 }
+
 .copyright {
    float: right;
 
@@ -85,12 +89,15 @@ nav .brand-logo {
 
    text-align: right;
 }
+
 .search-bar {
    padding-left: 200px;
 }
+
 .margin-fixer {
    padding-left: 30px;
 }
+
 form p {
    float: left;
 
@@ -102,9 +109,11 @@ form p {
    transition: background-color 2s;
    text-decoration: none;
 }
+
 .select-wrapper input.select-dropdown {
    font-size: 14px;
 }
+
 body {
    display: flex;
    flex-direction: column;
@@ -114,6 +123,7 @@ body {
 main {
    flex: 1 0 auto;
 }
+
 .card .customEventsImage {
    float: left;
 
@@ -121,13 +131,16 @@ main {
    height: 301px;
    padding: 5px;
 }
+
 .card .customEventsImage img {
    height: 100%;
 }
+
 .customEventsCardTitle {
    position: relative;
    top: -10px;
 }
+
 .card .customNewsCardImage {
    float: left;
 
@@ -135,43 +148,68 @@ main {
    height: 301px;
    padding: 5px;
 }
+
 .card .customNewsCardImage img {
    height: 100%;
 }
+
 .card.customCardContent {
    height: 301px;
 
    background-color: #ebebeb;
 }
+
 .card-title.newsCardTitle {
    padding: 30px;
 }
+
 .cardText {
    padding: 0 10px 0 230px;
 }
+
 .sharing {
    position: relative;
    top: 50px;
 
    text-align: center;
 }
+
 .sharingIcon {
    padding: 0 5px;
 }
+
 .findEventsButton {
    padding: 10px !important;
 
    text-align: center;
 }
+
 .findEventsText {
    padding: 10px !important;
 
    text-align: center;
 }
+
 .findEventCard {
    padding: 10px 0 0 0;
 }
 
 .customRegisteredButton {
-   padding: 5px 0 0 0 ;
+   margin: 5px 0 0 0 ;
+}
+
+.loadMorePosts {
+  text-align: center;
+}
+
+.missingPostsFeature {
+  display: none;
+}
+
+.contactButton {
+  margin: 0 0 0 5px;
+}
+
+.registeredContactButton {
+  margin: 5px 0 0 5px;
 }
