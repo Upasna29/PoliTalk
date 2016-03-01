@@ -1,82 +1,172 @@
 <!-- Need to define css ids, or classes for everything labeled placeholder to beautify -->
 <template name="publishedProfile">
-  <div class="container">
-    <div id="profile-card" class="card">
+  <div class="margin-fixer">
+    <div id="profilepub" class="container profileForm">
       <div class="row">
-        <div id="img_box" class="col s3 card-image">
-            <img src="tempJeb.jpg" height="185" alt="user Profile">
+        <h1>Profile</h1>
+          <form class="col s12" id="profile">
+            <div class="row">
+              <div class="input-field col s6">
+                <h6 style="font-size: 20px">First Name</h6>
+                <label style="padding-top:20px">Random</label>
+              </div>
+              <div class="input-field col s6">
+                <h6 style="font-size: 20px" >Last Name</h6>
+                <label style="padding-top:20px">Person</label>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="input-field col s12">
+                <h6 style="font-size: 20px">Phone</h6>
+                <i class="material-icons prefix">phone</i>
+                <label style="padding-top: 20px">+1 234 3485</label>
+              </div>
+            </div>
+            <br />
+            <br />
+            <div class="row">
+              <div class="input-field col s6">
+                <h6 style="font-size: 20px">Gender</h6>
+                <label style="padding-top: 20px" for="male">Male</label>
+              </div>
+              <div class="input-field col s6">
+                <h6 style="font-size: 20px">Would you like to receive notifications about nearby events?</h6>
+                <label style="padding-top: 20px" for="male">Yes</label>
+              </div>
+            </div>
+            <br />
+            <br />
+            <div class="row">
+              <div class="input-field col s6">
+                <h6 style="font-size: 20px">Which issues do you care about?</h6>
+                  <option value="guns" disabled>Gun Control</option>
+                  <option value="reproduction" disabled>Women's Reproductive Rights</option>
+                  <option value="healthcare" disabled>Healthcare</option>
+              </div>
+              <div class="input-field col s6">
+                <h6 style="font-size: 20px">Which candidates do you identify with?</h6>
+                  <option value="clinton" disabled>Hillary Clinton</option>
+                  <option value="sanders" disabled>Bernie Sanders</option>
+              </div>
+            </div>
+            <div style="text-align: center">
+              <input type="submit" name="submit" class="waves-effect waves-light btn" value="Edit">
+            </div>
+          </form>
         </div>
+      </div>
+    </div>
+</template>
+
+<!-- <div class="container">
+  <div id="profile-card" class="card">
+    <div class="row">
+      <div id="img_box" class="col s3 card-image">
+          <img src="tempJeb.jpg" height="185" alt="user Profile">
+      </div>
+      <div>
+          <div class="col s8">
+              <div class= "customProfileTitle"> Jeb Bush </div>
+              <div class="row">
+                <div class="col s8">
+                      &nbsp; &nbsp;
+                     <a class="sharingIcon" target="_blank" title="follow me on facebook" href="http://www.facebook.com/PLACEHOLDER"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png"></a>
+                      &nbsp;
+                     <a class="sharingIcon" target="_blank" title="follow me on Twitter" href="http://www.twitter.com/PLACEHOLDER"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twiiter40x40.png" border=0></a>
+                      &nbsp;
+                     <a class="sharingIcon" target="_blank" title="follow me on google plus" href="https://plus.google.com/PLACEHOLDER"><img alt="follow me on google plus" src="https://c866088.ssl.cf3.rackcdn.com/assets/googleplus40x40.png" border=0></a>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s4">
+      <!Profile About  -->
+      <!-- <div class="aboutMeCard">
         <div>
-            <div class="col s8">
-                <div class= "customProfileTitle"> Jeb Bush </div>
-                <div class="row">
-                  <div class="col s8">
-                        &nbsp; &nbsp;
-                       <a class="sharingIcon" target="_blank" title="follow me on facebook" href="http://www.facebook.com/PLACEHOLDER"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png"></a>
-                        &nbsp;
-                       <a class="sharingIcon" target="_blank" title="follow me on Twitter" href="http://www.twitter.com/PLACEHOLDER"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twiiter40x40.png" border=0></a>
-                        &nbsp;
-                       <a class="sharingIcon" target="_blank" title="follow me on google plus" href="https://plus.google.com/PLACEHOLDER"><img alt="follow me on google plus" src="https://c866088.ssl.cf3.rackcdn.com/assets/googleplus40x40.png" border=0></a>
-                  </div>
-                </div>
-            </div>
+          <div class="aboutMeTitle">About Me! </div>
+          <p style="padding: 10px"> I unsucessfully campaigned to be POTUS and got embarassed by Donald Trump. My family is ashamed of
+            me as both my dad and brother were President. Please support me in my next run!.
+          </p>
+          <p style="padding: 10px"> Phone Number: +1 630 623 9234</p>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col s4">
-        <!-- Profile About  -->
-        <div class="aboutMeCard">
-          <div>
-            <div class="aboutMeTitle">About Me! </div>
-            <p style="padding: 10px"> I unsucessfully campaigned to be POTUS and got embarassed by Donald Trump. My family is ashamed of
-              me as both my dad and brother were President. Please support me in my next run!.
-            </p>
-            <p style="padding: 10px"> Phone Number: +1 630 623 9234</p>
-          </div>
-        </div>
-      </div>
-      <div id="status_bar" class="col s8">
-        <div class="row">
-          <div class="col s12">
-            <ul class="tabs tab-profile z-depth-1 grey lighten-1">
-              <li class="tab col s3"><a class="white-text waves-effect waves-light active" href="#UpdateStatus"><i class="mdi-editor-border-color"></i> Update Status</a>
-              </li>
-              <li class="tab col s3"><a class="white-text waves-effect waves-light" href="#AddPhotos"><i class="mdi-image-camera-alt"></i> Add Photos</a>
-              </li>
-            </ul>
-            <!-- UpdateStatus-->
-            <div id="placeholder" class="tab-content col s12  grey lighten-4">
-              <div class="row">
-                <div class="input-field col s10">
-                  <textarea id="textarea" row="2" class="materialize-textarea"></textarea>
-                  <label for="textarea" class="">What's on your mind?</label>
-                </div>
+    <div id="status_bar" class="col s8">
+      <div class="row">
+        <div class="col s12">
+          <ul class="tabs tab-profile z-depth-1 grey lighten-1">
+            <li class="tab col s3"><a class="white-text waves-effect waves-light active" href="#UpdateStatus"><i class="mdi-editor-border-color"></i> Update Status</a>
+            </li>
+            <li class="tab col s3"><a class="white-text waves-effect waves-light" href="#AddPhotos"><i class="mdi-image-camera-alt"></i> Add Photos</a>
+            </li>
+          </ul>
+          <!UpdateStatus-->
+          <!-- <div id="placeholder" class="tab-content col s12  grey lighten-4">
+            <div class="row">
+              <div class="input-field col s10">
+                <textarea id="textarea" row="2" class="materialize-textarea"></textarea>
+                <label for="textarea" class="">What's on your mind?</label>
               </div>
-              <div class="row">
-                <div class="col s12 m6 share-icons">
-                  <a href="#"><i class="mdi-image-camera-alt"></i></a>
-                  <a href="#"><i class="mdi-action-account-circle"></i></a>
-                  <a href="#"><i class="mdi-hardware-keyboard-alt"></i></a>
-                  <a href="#"><i class="mdi-communication-location-on"></i></a>
-                </div>
-                <div class="col s12 m6 right-align">
-                    <a class="waves-effect waves-light btn"><i class="mdi-maps-rate-review left"></i>Post</a>
-                </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m6 share-icons">
+                <a href="#"><i class="mdi-image-camera-alt"></i></a>
+                <a href="#"><i class="mdi-action-account-circle"></i></a>
+                <a href="#"><i class="mdi-hardware-keyboard-alt"></i></a>
+                <a href="#"><i class="mdi-communication-location-on"></i></a>
+              </div>
+              <div class="col s12 m6 right-align">
+                  <a class="waves-effect waves-light btn"><i class="mdi-maps-rate-review left"></i>Post</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
+  </div>
+  <div class="row">
+    <div class="col s4">
+      <div class="infoCard">
+        <div class="infoTitle">Issues I care about!</div>
+        <p style="padding: 10px" >Insert Bulleted List Here</p>
+      </div>
+    </div>
+    <div style="margin-top:-100px" class="col s8">
+      <div class="card grey lighten-4">
+          <div class="card-profile-title">
+            <div class="row">
+              <div class="col s3">
+                <img src="tempJeb.jpg" class="responsive-img profile-post-user-image">
+              </div>
+              <div class="col s8">
+                <p class="grey-text text-darken-4 margin">Jeb Bush</p>
+                <span class="grey-text text-darken-1 ultra-small">Posted - 10 Jan 2016</span>
+              </div>
+              <div class="col s1 right-align">
+                <i class="mdi-navigation-expand-more"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <p>I am withdrawing from the Presidential Race</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
       <div class="col s4">
         <div class="infoCard">
-          <div class="infoTitle">Issues I care about!</div>
-          <p style="padding: 10px" >Insert Bulleted List Here</p>
+          <div class="infoTitle">Candidates I Identify With!</div>
+          <p style="padding: 10px">Insert Bulleted List Here</p>
         </div>
       </div>
-      <div style="margin-top:-100px" class="col s8">
+      <div style="margin-top:-120px" class="col s8">
         <div class="card grey lighten-4">
             <div class="card-profile-title">
               <div class="row">
@@ -85,7 +175,7 @@
                 </div>
                 <div class="col s8">
                   <p class="grey-text text-darken-4 margin">Jeb Bush</p>
-                  <span class="grey-text text-darken-1 ultra-small">Posted - 10 Jan 2016</span>
+                  <span class="grey-text text-darken-1 ultra-small">Posted - 10 June 2015</span>
                 </div>
                 <div class="col s1 right-align">
                   <i class="mdi-navigation-expand-more"></i>
@@ -93,43 +183,11 @@
               </div>
               <div class="row">
                 <div class="col s12">
-                  <p>I am withdrawing from the Presidential Race</p>
+                  <p>I am announcing my candidacy for Presidency</p>
                 </div>
               </div>
             </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-        <div class="col s4">
-          <div class="infoCard">
-            <div class="infoTitle">Candidates I Identify With!</div>
-            <p style="padding: 10px">Insert Bulleted List Here</p>
-          </div>
-        </div>
-        <div style="margin-top:-120px" class="col s8">
-          <div class="card grey lighten-4">
-              <div class="card-profile-title">
-                <div class="row">
-                  <div class="col s3">
-                    <img src="tempJeb.jpg" class="responsive-img profile-post-user-image">
-                  </div>
-                  <div class="col s8">
-                    <p class="grey-text text-darken-4 margin">Jeb Bush</p>
-                    <span class="grey-text text-darken-1 ultra-small">Posted - 10 June 2015</span>
-                  </div>
-                  <div class="col s1 right-align">
-                    <i class="mdi-navigation-expand-more"></i>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col s12">
-                    <p>I am announcing my candidacy for Presidency</p>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-    </div>
-  </div>
-</template>
+  </div> -->
+<!-- </div>  -->
