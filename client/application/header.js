@@ -8,7 +8,7 @@ Template.header.onRendered (
 Template.header.helpers({
     notFirstTime: function(){
         if (Meteor.user() && ('profile' in Meteor.user())){
-            return !("firstame" in Meteor.user().profile)
+            return !("firstame" in Meteor.user().profile);
         }
         else{
             return false;

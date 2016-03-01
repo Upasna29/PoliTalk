@@ -8,9 +8,9 @@
                     <li>
                         <form>
                             <div class="input-field">
-                                <input id="search" type="search" placeholder="Search" required>
-                                <label for="search"><i class="material-icons black-text">search</i> </label>
-                                <i class="material-icons"> close </i>
+                                <input type="search" placeholder="Feature Coming" required>
+                                <label for="search"><i class="material-icons black-text">search</i></label>
+                                <i class="material-icons">close</i>
                             </div>
                         </form>
                     </li>
@@ -27,10 +27,10 @@
                     </li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
-                    <li>
-                        <i class="material-icons md-dark">face</i>
-                    </li>
-                    <li><a href="">About Us</a></li>
+                    <li><i class="material-icons md-dark">face</i></li>
+                    <li><a href="{{pathFor 'publishedProfile'}}">Profile</a></li>
+                    <li><a href="{{pathFor 'events'}}">Find an Event</a></li>
+                    <li><a href="{{pathFor 'aboutUs'}}">About Us</a></li>
                 </ul>
             </div>
         </nav>
