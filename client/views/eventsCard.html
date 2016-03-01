@@ -6,44 +6,24 @@
                <img class="activator" src="RepublicansDebate.jpg">
             </div>
             <div class="card-content">
-               <span class="customEventsCardTitle card-title activator grey-text text-darken-4">Political Debate<i class="material-icons right">keyboard_arrow_up</i>
+               <span class="customEventsCardTitle card-title activator grey-text text-darken-4">{{style}} - {{host}}<i class="material-icons right">keyboard_arrow_up</i>
                </span>
-               <p>
-                  <a class="waves-effect waves-light btn">Register</a><a class="contactButton waves-effect waves-light btn">Contact Event Organizer</a>
-               </p>
+               <!-- <p>
+                  <a class="waves-effect waves-light btn">Register</a>
+               </p> -->
             </div>
             <div class="card-reveal">
-               <span class="card-title grey-text text-darken-4">Political Debate<i class="material-icons right">close</i>
+               <span class="card-title grey-text text-darken-4">{{host}}<i class="material-icons right">close</i>
                </span>
-               <p>Come watch a debate between candidates for Illinois' 9th District Senate seat. Have a chance to meet and talk to the candidates one-on-one.</p>
+               <p>{{description}}</p>
                <strong>Date:</strong>
-               March 5th, 5-7pm<br/>
+               {{formatTime time}}<br/>
                <strong>Location:</strong>
-               <a target="_blank" href="https://www.google.com/maps/place/Technological+Institute/@42.0574687,-87.6764962,17.39z/data=!3m1!5s0x880fda9f1b298823:0x5ddd9c6b58ee44f5!4m5!1m2!2m1!1stech+institute+northwestern!3m1!1s0x0000000000000000:0x2ed194bb956cab66?hl=en">Ryan Auditorium, Northwestern Tech Institute, Evanston</a><br/><br/>
-               <a class="waves-effect waves-light btn">Register</a><a class="contactButton waves-effect waves-light btn">Contact Event Organizer</a>
+               <a href="https://www.google.com/maps/place/Technological+Institute/@42.0574687,-87.6764962,17.39z/data=!3m1!5s0x880fda9f1b298823:0x5ddd9c6b58ee44f5!4m5!1m2!2m1!1stech+institute+northwestern!3m1!1s0x0000000000000000:0x2ed194bb956cab66?hl=en">{{location}}</a><br/><br/>
+               <a class="waves-effect waves-light btn">Register</a>
+               <a class="waves-effect waves-light btn right" href="{{pathFor 'notYetImplemented'}}">Contact this event</a>
             </div>
          </div>
       </div>
    </div>
 </template>
-
-<!-- <div class="row">
-      <div class="col s6 offset-s3">
-           <div class="card customCardContent">
-                   <div class="customEventsImage">
-                      <img src="event!.jpeg" />
-                 </div>
-                 <div class="card-content">
-                   <span class="card-title">{{host}}</span>
-                   <p class="cardText">
-                       {{location}} <br /><br />
-                       {{description}}</p>
-                 </div>
-                 <div class="sharing">
-                      <a class="sharingIcon" target="_blank" title="follow me on facebook" href="http://www.facebook.com/PLACEHOLDER"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png"></a>
-                      <a class="sharingIcon" target="_blank" title="follow me on Twitter" href="http://www.twitter.com/PLACEHOLDER"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twiiter40x40.png" border=0></a>
-                      <a class="sharingIcon" target="_blank" title="follow me on google plus" href="https://plus.google.com/PLACEHOLDER"><img alt="follow me on google plus" src="https://c866088.ssl.cf3.rackcdn.com/assets/googleplus40x40.png" border=0></a>
-                 </div>
-           </div>
-         </div>
-  </div> -->

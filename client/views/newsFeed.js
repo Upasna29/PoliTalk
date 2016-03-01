@@ -3,3 +3,9 @@ Template.header.onRendered(function(){
         $(".missingPostsFeature").fadeIn();
      });
   });
+
+Template.newsFeed.helpers({
+    getPosts: function(){
+        return Posts.find();
+    }
+});

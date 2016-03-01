@@ -213,3 +213,11 @@ main {
 .registeredContactButton {
   margin: 5px 0 0 5px;
 }
+
+.btn.right {
+    align: right;
+}
+
+.featureComingSoon {
+  text-align: center;
+}

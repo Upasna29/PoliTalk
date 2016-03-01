@@ -3,13 +3,11 @@
       <div class="col s6 offset-s3">
          <h3>Trending</h3>
          <hr>
-         {{>newsCard}}
-         {{>newsCard}}
-         {{>newsCard}}
-         {{>newsCard}}
-         {{>newsCard}}
-         {{>newsCard}}
-         <div class="loadMorePosts">
+         {{#each getPosts}}
+            {{> newsCard}}
+         {{/each}}
+
+            <div class="loadMorePosts">
             <a class="missingPostButton waves-effect waves-light btn">Load More Posts</a>
             <div class="missingPostsFeature">
                <br /><br />
@@ -19,6 +17,7 @@
                </div>
             </div>
          </div>
+
       </div>
    </div>
 </template>
