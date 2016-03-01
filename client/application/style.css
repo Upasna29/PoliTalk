@@ -1,110 +1,177 @@
 bolded {
+   font-size: 15px;
+   font-weight: bold;
+}
+
+#profile-card{
+  background-color: grey;
+  height: 275px;
+  padding-left: 35px;
+  padding-top: 35px;
+}
+
+#status_bar{
+  padding-top: 8px;
+}
+
+#img_box{
+  position: relative;
+  height: 200px;
+  width: 175px;
+  border-style: solid;
+  border-color: black;
+}
+
+.customProfileTitle{
   font-weight: bold;
-  font-size: 15px;
+  font-color: grey;
+  font-size: 40px;
+  padding-left: 20px;
+  padding-top: 100px;
+}
+
+.aboutMeCard {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #ebebeb;
+  border-style: solid;
+  border-color: grey;
+  transition: box-shadow .25s;
+  border-radius: 2px;
+  height: 350px;
+}
+
+.aboutMeTitle{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.infoCard{
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #ebebeb;
+  border-style: solid;
+  border-color: grey;
+  transition: box-shadow .25s;
+  border-radius: 2px;
+  height: 200px;
+}
+
+.infoTitle{
+  font-size: 30px;
+  font-weight: 300;
 }
 
 nav .brand-logo {
    padding: 0 10px;
 }
-
 .material-icons.md-dark {
-   color: black;
    text-align: center;
-}
 
+   color: black;
+}
 .footerLinksDiv {
    float: left;
+
    padding: 0 10px;
 }
-
 .footerLink {
    padding: 0 5px;
 }
-
 .copyright {
    float: right;
-   text-align: right;
+
    padding: 0 15px;
-}
 
-.search-bar{
-  padding-left: 200px;
+   text-align: right;
 }
-
-.margin-fixer{
-  padding-left: 30px;
+.search-bar {
+   padding-left: 200px;
 }
-
+.margin-fixer {
+   padding-left: 30px;
+}
 form p {
    float: left;
+
    margin: 0 10px 0 0;
 }
 
 #login-buttons a {
-   text-decoration: none;
    cursor: pointer;
    transition: background-color 2s;
+   text-decoration: none;
 }
-
 .select-wrapper input.select-dropdown {
    font-size: 14px;
 }
-
-
 body {
    display: flex;
-   min-height: 100vh;
    flex-direction: column;
- }
 
- main {
+   min-height: 100vh;
+}
+main {
    flex: 1 0 auto;
- }
+}
+.card .customEventsImage {
+   float: left;
 
- .card .card-image {
+   width: 500px;
+   height: 301px;
+   padding: 5px;
+}
+.card .customEventsImage img {
+   height: 100%;
+}
+.customEventsCardTitle {
+   position: relative;
+   top: -10px;
+}
+.card .customNewsCardImage {
+   float: left;
+
    width: 220px;
    height: 301px;
-   float: left;
    padding: 5px;
- }
-
- .card .card-image img {
-   height: 100%;
- }
-
- .card.customCardContent {
-   height: 301px;
-   background-color: #ebebeb;
- }
-
- .card-title {
-    padding: 30px;
 }
+.card .customNewsCardImage img {
+   height: 100%;
+}
+.card.customCardContent {
+   height: 301px;
 
+   background-color: #ebebeb;
+}
+.card-title.newsCardTitle {
+   padding: 30px;
+}
 .cardText {
    padding: 0 10px 0 230px;
 }
-
 .sharing {
    position: relative;
    top: 50px;
+
    text-align: center;
 }
-
 .sharingIcon {
    padding: 0 5px;
 }
-
 .findEventsButton {
-  text-align: center;
-  padding: 10px !important;
-}
+   padding: 10px !important;
 
+   text-align: center;
+}
 .findEventsText {
-  text-align: center;
-  padding: 10px !important;
+   padding: 10px !important;
+
+   text-align: center;
+}
+.findEventCard {
+   padding: 10px 0 0 0;
 }
 
-.findEventCard {
-  padding: 10px 0 0 0;
+.customRegisteredButton {
+   margin: 5px 0 0 0;
 }
