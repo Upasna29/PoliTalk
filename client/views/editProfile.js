@@ -35,6 +35,7 @@ Template.editProfile.events({
             'notify':    $("input[type='radio'][name='receiveNotifications']:checked").val() || "",
             'issues':    issues,
             'candidates':candidates,
+            'events': []
          };
         Users.update({_id:Meteor.userId()}, {$set:{
             'profile': myprofile,

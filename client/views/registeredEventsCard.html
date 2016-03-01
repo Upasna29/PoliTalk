@@ -1,9 +1,9 @@
-<template name="eventsCard">
+<template name="registeredEventsCard">
    <div class="row">
       <div class="col s4 offset-s4">
          <div class="card small customEventsCard">
             <div class="card-image waves-effect waves-block waves-light">
-               <img class="activator" src="{{photo}}">
+               <img class="activator" src="debate.jpg">
             </div>
             <div class="card-content">
                <span class="customEventsCardTitle card-title activator grey-text text-darken-4">{{style}} - {{host}}<i class="material-icons right">keyboard_arrow_up</i>
@@ -20,7 +20,7 @@
                {{formatTime time}}<br/>
                <strong>Location:</strong>
                <a href="https://www.google.com/maps/place/Technological+Institute/@42.0574687,-87.6764962,17.39z/data=!3m1!5s0x880fda9f1b298823:0x5ddd9c6b58ee44f5!4m5!1m2!2m1!1stech+institute+northwestern!3m1!1s0x0000000000000000:0x2ed194bb956cab66?hl=en">{{location}}</a><br/><br/>
-               <a class="waves-effect waves-light btn" id="register">Register</a>
+               <a class="waves-effect waves-light btn disabled" id="register">Registered</a>
                <a class="waves-effect waves-light btn right" href="{{pathFor 'contactForm'}}">Contact this event</a>
             </div>
          </div>

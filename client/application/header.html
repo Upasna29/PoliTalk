@@ -16,8 +16,10 @@
                     </li>
                 </ul>
                 <ul class="right hide-on-med-and-down">
+                    {{#if notFirstTime}}
                     <li> <a href="{{pathFor 'publishedProfile'}}"> Profile </a> </li>
                     <li> <a href="{{pathFor 'events'}}">Find an Event</a></li>
+                    {{/if}}
                     <li><a href="{{pathFor 'aboutUs'}}">About Us</a></li>
                     <li style="padding-right: 20px">
                         {{> loginButtons align="right"}}
@@ -25,10 +27,10 @@
                     </li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
-                    <li>
-                        <i class="material-icons md-dark">face</i>
-                    </li>
-                    <li><a href="">About Us</a></li>
+                    <li><i class="material-icons md-dark">face</i></li>
+                    <li><a href="{{pathFor 'publishedProfile'}}">Profile</a></li>
+                    <li><a href="{{pathFor 'events'}}">Find an Event</a></li>
+                    <li><a href="{{pathFor 'aboutUs'}}">About Us</a></li>
                 </ul>
             </div>
         </nav>

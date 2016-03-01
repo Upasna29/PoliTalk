@@ -3,7 +3,9 @@
       <div class="col s6 offset-s3">
          <h3>Registered Events</h3>
          <hr>
-         {{>registeredEventCard}}
+         {{#each myEvents}}
+            {{>registeredEventsCard}}
+         {{/each}}
       </div>
    </div>
 </template>
