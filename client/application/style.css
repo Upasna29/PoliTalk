@@ -237,3 +237,7 @@ main {
 footer.page-footer {
   background-color: #4285f4;
 }
+
+.center {
+  text-align: center;
+}

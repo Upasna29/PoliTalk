@@ -1,9 +1,48 @@
 <template name="volunteerForEvent">
    <div class="row findEventCard">
       <div class="col s12">
-         <h3>Volunteer For Event</h3>
+         <h3>Volunteer for Event</h3>
          <hr>
 
+         <div class="input-field col s6">
+            <h6>Which event would you like to volunteer for?</h6>
+            <select>
+               <option value="" disabled selected>Choose the event</option>
+               <option value="1">Townhall Meeting with Jan Schakowsky</option>
+               <option value="2">Daniel Biss Speech</option>
+               <option value="3">Q&A with Bill Nye</option>
+            </select>
+         </div>
+
+         <div class="input-field col s6">
+            <h6>Are you comfortable answering questions about the candidate?</h6>
+            <form action="#">
+               <p>
+                  <input class="with-gap" name="group3" type="radio" id="test5"/>
+                  <label for="test5">Yes</label>
+               </p>
+               <p>
+                  <input class="with-gap" name="group3" type="radio" id="test6"/>
+                  <label for="test6">No</label>
+               </p>
+            </form>
+         </div>
+
+      </div>
+   </div>
+   <div class="row findEventCard center">
+      <form class="col s12">
+         <div class="row">
+            <div class="input-field col s12">
+               <textarea id="textarea1" class="materialize-textarea"></textarea>
+               <label for="textarea1">Why do you want to volunteer?</label>
+            </div>
+         </div>
+      </form>
+   </div>
+   <div class="row findEventCard center">
+      <div class="col s12">
+         <a class="waves-effect waves-light btn">Volunteer</a>
       </div>
    </div>
 </template>

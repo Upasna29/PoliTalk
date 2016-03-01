@@ -3,7 +3,53 @@
       <div class="col s12">
          <h3>Canvass</h3>
          <hr>
-
+         <div class="input-field col s4 offset-s1">
+            <h6>In-person or over the phone?</h6>
+            <form action="#">
+               <p>
+                  <input class="with-gap" name="group1" type="radio" id="test1"/>
+                  <label for="test1">In-person</label>
+               </p>
+               <p>
+                  <input class="with-gap" name="group1" type="radio" id="test2"/>
+                  <label for="test2">Over the phone</label>
+               </p>
+            </form>
+         </div>
+         <div class="input-field col s4 offset-s2">
+            <h6>Able to drive?</h6>
+            <form action="#">
+               <p>
+                  <input class="with-gap" name="group2" type="radio" id="test3"/>
+                  <label for="test3">Yes</label>
+               </p>
+               <p>
+                  <input class="with-gap" name="group2" type="radio" id="test4"/>
+                  <label for="test4">No</label>
+               </p>
+            </form>
+         </div>
+      </div>
+   </div>
+   <div class="row findEventCard">
+      <div class="input-field col s4 offset-s1">
+         <h6>Which campaign would you like to canvass for?</h6>
+         <select>
+            <option value="" disabled selected>Choose the campaign</option>
+            <option value="1">Daniel Biss</option>
+            <option value="2">Jan Schakowsky</option>
+            <option value="3">Bernie Sanders</option>
+            <option value="4">John Kasich</option>
+         </select>
+      </div>
+      <div class="input-field col s4 offset-s2">
+        <h6>Location</h6>
+        <input id="donate" class="validate">
+    </div>
+   </div>
+   <div class="row findEventCard center">
+      <div class="col s12">
+         <a class="waves-effect waves-light btn">Canvass!</a>
       </div>
    </div>
 </template>

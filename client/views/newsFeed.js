@@ -1,4 +1,4 @@
-Template.header.onRendered(function(){
+Template.newsFeed.onRendered(function(){
     $(".missingPostButton").click(function(){
         $(".missingPostsFeature").fadeIn();
      });
