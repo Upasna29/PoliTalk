@@ -3,12 +3,9 @@
       <div class="col s6 offset-s3">
          <h3>Trending</h3>
          <hr>
-         {{>newsCard}}
-         {{>newsCard}}
-         {{>newsCard}}
-         {{>newsCard}}
-         {{>newsCard}}
-         {{>newsCard}}
+         {{#each getPosts}}
+            {{> newsCard}}
+         {{/each}}
       </div>
    </div>
 </template>
