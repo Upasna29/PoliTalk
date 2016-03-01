@@ -2,7 +2,7 @@ Template.contactForm.onRendered (
    function() {
       $(document).ready(function() {
       $('submit').material_select();
-      $('#textarea1').val('New Text');
+    //   $('#textarea1').val('New Text');
       $('#textarea1').trigger('autoresize');
    });
 });
