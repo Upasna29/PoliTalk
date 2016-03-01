@@ -10,7 +10,6 @@ Template.contactForm.onRendered (
 
 Template.contactForm.events({
     'submit #profile': function(e){
-        console.log('yo')
         e.preventDefault();
         Router.go('home');
     }
