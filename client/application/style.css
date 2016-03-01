@@ -3,6 +3,65 @@ bolded {
   font-size: 15px;
 }
 
+#profile-card{
+  background-color: grey;
+  height: 275px;
+  padding-left: 35px;
+  padding-top: 35px;
+}
+
+#status_bar{
+  padding-top: 8px;
+}
+
+#img_box{
+  position: relative;
+  height: 200px;
+  width: 175px;
+  border-style: solid;
+  border-color: black;
+}
+
+.customProfileTitle{
+  font-weight: bold;
+  font-color: grey;
+  font-size: 40px;
+  padding-left: 20px;
+  padding-top: 100px;
+}
+
+.aboutMeCard {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #ebebeb;
+  border-style: solid;
+  border-color: grey;
+  transition: box-shadow .25s;
+  border-radius: 2px;
+  height: 350px;
+}
+
+.aboutMeTitle{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.infoCard{
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #ebebeb;
+  border-style: solid;
+  border-color: grey;
+  transition: box-shadow .25s;
+  border-radius: 2px;
+  height: 200px;
+}
+
+.infoTitle{
+  font-size: 30px;
+  font-weight: 300;
+}
+
 nav .brand-logo {
    padding: 0 10px;
 }
