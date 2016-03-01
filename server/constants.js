@@ -22,5 +22,25 @@ if (Events.find().count()==0){
             'description': "Oh man Bill Nye is speaking on my birthday! -Sasha"
         }
     ];
-    var id = Events.insert(events);
+    _.each(events, function(obj){
+        Events.insert(obj);
+    });
+}
+
+if (Posts.find().count()==0){
+    var posts = [
+        {
+            'author':'Jan Schakowsky',
+            'location': 'Evanston, Illinois',
+            'description': "In Illinois, community, migrant, homeless and public housing health centers operate 268 primary care sites and serve close to 1 million patients every year.",
+        },
+        {
+            'author': 'Daniel Biss',
+            'location': 'Skokie, Illinois',
+            'description': "Hey all. Big vote coming up on IL Senate Bill H325-A, let me know what you think."
+        },
+    ];
+    _.each(posts, function(obj){
+        Posts.insert(obj);
+    });
 }

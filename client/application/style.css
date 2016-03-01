@@ -175,3 +175,7 @@ main {
 .customRegisteredButton {
    margin: 5px 0 0 0;
 }
+
+.btn .right {
+    align: right;
+}
