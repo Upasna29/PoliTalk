@@ -7,12 +7,8 @@
           <form class="col s12" id="profile">
             <div class="row">
               <div class="input-field col s6">
-                <h6 style="font-size: 20px">First Name</h6>
-                <label style="padding-top:20px">Random</label>
-              </div>
-              <div class="input-field col s6">
-                <h6 style="font-size: 20px" >Last Name</h6>
-                <label style="padding-top:20px">Person</label>
+                <h6 style="font-size: 20px">Name</h6>
+                <label style="padding-top:20px">{{firstname}} {{lastname}}</label>
               </div>
             </div>
             <br />
@@ -20,7 +16,7 @@
               <div class="input-field col s12">
                 <h6 style="font-size: 20px">Phone</h6>
                 <i class="material-icons prefix">phone</i>
-                <label style="padding-top: 20px">+1 234 3485</label>
+                <label style="padding-top: 20px">{{phone}}</label>
               </div>
             </div>
             <br />
@@ -28,11 +24,11 @@
             <div class="row">
               <div class="input-field col s6">
                 <h6 style="font-size: 20px">Gender</h6>
-                <label style="padding-top: 20px" for="male">Male</label>
+                <label style="padding-top: 20px" for="male">{{gender}}</label>
               </div>
               <div class="input-field col s6">
                 <h6 style="font-size: 20px">Would you like to receive notifications about nearby events?</h6>
-                <label style="padding-top: 20px" for="male">Yes</label>
+                <label style="padding-top: 40px" for="male">{{notify}}</label>
               </div>
             </div>
             <br />
@@ -40,17 +36,14 @@
             <div class="row">
               <div class="input-field col s6">
                 <h6 style="font-size: 20px">Which issues do you care about?</h6>
-                  <option value="guns" disabled>Gun Control</option>
-                  <option value="reproduction" disabled>Women's Reproductive Rights</option>
-                  <option value="healthcare" disabled>Healthcare</option>
+                <label style="padding-top: 20px" for="male">{{issues}}</label>
               </div>
               <div class="input-field col s6">
                 <h6 style="font-size: 20px">Which candidates do you identify with?</h6>
-                  <option value="clinton" disabled>Hillary Clinton</option>
-                  <option value="sanders" disabled>Bernie Sanders</option>
+                <label style="padding-top: 20px" for="male">{{candidates}}</label>
               </div>
             </div>
-            <div style="text-align: center">
+            <div style="text-align: center; padding-top: 40px">
               <input type="submit" name="submit" class="waves-effect waves-light btn" value="Edit">
             </div>
           </form>

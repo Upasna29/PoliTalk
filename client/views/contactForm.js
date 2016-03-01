@@ -10,8 +10,8 @@ Template.contactForm.onRendered (
 
 Template.contactForm.events({
     'submit #profile': function(e){
-        console.log('yo')
         e.preventDefault();
+        alert('Thank you for contacting us');
         Router.go('home');
     }
 });

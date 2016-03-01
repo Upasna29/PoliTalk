@@ -47,7 +47,7 @@ if (Posts.find().count() === 0){
         {
             'author':'Bernie Sanders',
             'location': 'Montpelier, Vermont',
-            'description': "Do the elected officials in Washington stand with ordinary Americans - working families, children, the elderly, the poor - or will the extraordinary power of billionaire campaign contributors and Big Money prevail? The American people, by the millions, must send Congress the answer to that question.",
+            'description': "Finally, let understand that when we stand together, we will always win. When men and women stand together for justice, we win. When black, white and Hispanic people stand together for justice, we win.",
             'photo': "BernieSandersEdited.jpg",
         },
         {
