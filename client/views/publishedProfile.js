@@ -9,6 +9,6 @@ Template.publishedProfile.events({
     'submit #profilepub': function(e){
         console.log('yo')
         e.preventDefault();
-        Router.go('edit_profile');
+        Router.go('editProfile');
     }
 });
